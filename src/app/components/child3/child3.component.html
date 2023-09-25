@@ -1,0 +1,14 @@
+<h3>Child Component</h3>
+
+<form [formGroup]="childForm" (ngSubmit)="submitForm()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" formControlName="name"> <br><br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" formControlName="age">  <br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" formControlName="email">  <br><br>
+
+  <button type="submit"  >Submit</button>
+</form>

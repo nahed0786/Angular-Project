@@ -1,0 +1,35 @@
+<!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="inputData">Enter Name : </label>
+    <input id="inputData" type="text" formControlName="Name"> &nbsp;  &nbsp;
+    <button type="submit">Submit</button> <br><br>
+  </form>
+  
+  <div *ngFor="let data of displayedData; let i = index">
+    <input type="text" [value]="data" readonly>  &nbsp; &nbsp;
+    <button (click)="removeData(i)">X</button>
+  </div> -->
+
+
+
+  <!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="inputData">Enter Name : </label>
+    <input id="inputData" type="text" formControlName="Name"> &nbsp;  &nbsp;
+    <button type="submit">Submit</button> <br><br>
+  </form>
+  
+  <div *ngFor="let data of displayedData; let i = index">
+    <input type="text" [value]="data" >  &nbsp; &nbsp;
+    <button (click)="removeData(i)">X</button>
+  </div>  -->
+
+
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="inputData">Enter Name : </label>
+    <input id="inputData" type="text" formControlName=Name> &nbsp;  &nbsp;
+    <button type="submit">Submit</button> <br><br>
+  </form>
+  
+  <div *ngFor="let data of displayedData; let i = index">
+    <input type="text" [value]="data" >  &nbsp; &nbsp;
+    <button (click)="removeField(i)">Delete</button>
+  </div> 

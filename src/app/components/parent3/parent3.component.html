@@ -1,0 +1,11 @@
+<app-child3 (childDataEvent)="handleChildData($event)"></app-child3>
+
+<div *ngIf="receivedData">
+  <h3>Data from Child:</h3>
+  <ul>
+    <li>Name: {{ receivedData.name }}</li>
+    <li>Age: {{ receivedData.age }}</li>
+    <li>Email: {{ receivedData.email }}</li>
+  </ul>
+</div>
+

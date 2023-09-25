@@ -1,0 +1,18 @@
+
+<h1 mat-dialog-title>Todo list</h1>
+<!-- <div mat-dialog-content> -->
+  Enter Name: <input type="text" placeholder="Enter new task" #task> &nbsp; &nbsp;
+<button (click)="addTask(task.value)">add task</button>
+<!-- </div> -->
+<ul *ngFor="let item of list; let i = index">
+    <li>
+       {{item.name}} <button (click)="dltname(i)">Delete</button>
+    </li>
+</ul>
+<br><br>
+
+<div mat-dialog-action>
+    <button (click)="closepopup()" style="color: blueviolet;">close</button> &nbsp;&nbsp;&nbsp;
+    <button [mat-dialog-close]="closemessage" style="color: blueviolet;">cancel</button>
+    
+    </div>

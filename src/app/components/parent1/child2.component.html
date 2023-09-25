@@ -1,0 +1,12 @@
+  <form [formGroup]="parentForm" (ngSubmit)="submitForm()">
+ Enter name:   <input formControlName="name" placeholder="Name"> <br><br>
+ Enter age:   <input formControlName="age" placeholder="Age"><br><br>
+ Enter email:   <input formControlName="email" placeholder="Email"><br><br>
+ Enter gender:   <select formControlName="gender" placeholder="Gender"> <br><br>
+      <option *ngFor="let option of genderOptions" [value]="option">
+        {{ option }}
+      </option>
+    </select> &nbsp; &nbsp;
+    <button type="submit" (click)="showChildComponent()">Submit</button>
+  </form>
+  <app-child1 *ngIf="showChild" [childData]="submittedData"></app-child1>

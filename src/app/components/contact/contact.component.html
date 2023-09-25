@@ -1,0 +1,36 @@
+<mat-card-header>
+    <mat-toolbar class="toolbar">
+        <mat-card-title>Contact Information</mat-card-title>
+        <span class="toolbar-spacer"></span>
+        <mat-icon (click)="onNoClick()"></mat-icon>
+    </mat-toolbar>
+</mat-card-header>
+  <mat-card>
+    <div class="container">
+        <form [formGroup]="contactForm" (ngSubmit)="onsubmit()" >
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label> First Name</label>
+                    <input type="text" formControlname='firstName' class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label> Last Name</label>
+                    <input type="text" formControlname='lastName' class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label> Contact Number</label>
+                    <input type="text" formControlname='contactNumber' class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label> Email</label>
+                    <input type="text" formControlname='Email' class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-success" ><mat-icon>Save</mat-icon></button>
+        </div>
+    </form>
+    </div>
+</mat-card>

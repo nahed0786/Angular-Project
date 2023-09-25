@@ -1,0 +1,11 @@
+<div class="login-form">
+    <div class="log-in">
+        <h1>Login Form</h1>         <!--  form name  #sellerSignUp  and submit korar jonno akti function likbo abong tar moddhe form name likbo (ngSubmit)="signUp(sellerSignUp.value)" -->
+         <form #loginForm="ngForm"  (ngSubmit)="userLogin(loginForm.value)" >   <br>     
+            <input  type="text" ngModel name="name" placeholder="Enter Name" required> <br> <br> 
+            <input  type="text" ngModel name="email" placeholder="Enter Email" required> <br> <br>
+            <input  type="password" ngModel name="password" placeholder="Enter Password" required>  <br> <br>
+            <button >login</button>
+        </form>
+    </div>
+</div>

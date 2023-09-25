@@ -1,0 +1,10 @@
+
+
+<form [formGroup]="sessionForm">
+   <label >Session Name </label>
+   <input type="text"  formControlName="sessionname"> <br> <br>
+   <label>remember me</label>
+   <input type="checkbox" formControlName="remember">
+    
+      <button type="submit" class="btn btn-danger" (click)="set()">Save</button>  
+  </form>

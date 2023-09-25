@@ -1,0 +1,19 @@
+Enter name: <input type="text" [(ngModel)]="heroName">
+<button mat-flat-button color="primary" class="large" (click)="addHero()">Create</button>
+
+<app-child1 [list]="heroList" (foodEvt)="afterFoofAdd($event)"></app-child1>
+
+
+
+
+<app-child2></app-child2>
+
+
+
+<h1>Data coming from child1 to parent component</h1>
+<h1>Favorite food</h1>
+<ul *ngFor="let food of foods">
+    <li>
+        {{food}}
+    </li>
+</ul>

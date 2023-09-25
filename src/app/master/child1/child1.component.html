@@ -1,0 +1,17 @@
+<h1>Data coming from parent to child1 component</h1>
+<h1>hero list:</h1>
+<ul>
+    <li *ngFor="let hero of list let i = index">
+        {{hero}} <button (click)="delname(i)">Delete</button>
+    </li>
+</ul>
+
+<hr>
+
+<div class="container" style="text-align: center">
+    child1 to child2: <input type="text" [(ngModel)]="enteredText"> &nbsp;
+    <button (click)="OnBtnClick()">Click</button>
+</div>
+
+Enter foodName :<input type="text" [(ngModel)]="foodName">
+<button (click)="addToFood(foodName)">Create</button>
